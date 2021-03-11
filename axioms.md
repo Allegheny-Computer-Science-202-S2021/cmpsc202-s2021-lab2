@@ -1,4 +1,4 @@
-## Analyze the axioms provided below and answer the questions provided in this document. The axioms are not connected to each other. Edit this file by simply replacing the place holder --------- with your answer.
+## Analyze the axioms provided below and answer the questions provided in this document. The axioms are not connected to each other. Edit this file by simply replacing the place holder --------- next to Output = with your answer.
 ------------------------------------------------
 1) What is the output of the axiom provided below?
 Pop(Push(Push(S,v),u))
@@ -21,7 +21,7 @@ Top(Push(Pop(Pop(Push(Push(S,u),v))),v))
 Output = ---------
 ------------------------------------------------
 5) What is the output of the axiom provided below?
-Top(Push((Push(Pop(Pop(Push(Push(S,u),v))),v)),u))
+Top(Push(Push(Pop(Pop(Push(Push(S,u),v))),v),u))
 ------------------------------------------------
 Output = ---------
 ------------------------------------------------
