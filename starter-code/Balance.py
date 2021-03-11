@@ -5,7 +5,7 @@ limit,calls = 2,0
 def generate(balls,size):
     maximum = 25; # maximum ball weight 25 oz, assuming weight distributed between 19 and 25
     genuine_weight = random.randint(20,maximum)
-    defective_weight = random.randint(19,genuine_weight-1)
+    defective_weight = random.randint(30,genuine_weight+30)
     if (genuine_weight == defective_weight):
         defective_weight = genuine_weight - 1
     defective_position = random.randint(0, size-1);
@@ -29,14 +29,15 @@ def balance(balls,left,right):
         rsum += balls[i]
     if (lsum == rsum):    
         return 0
-    elif (lsum < rsum):
+    elif (lsum > rsum):
         return -1
     else:
         return 1
 
 def puzzle(balls):
+    result = 0
     # add your logic here by removing pass below ...
-    pass
+    return result
 
 balls = []
 size = 9
@@ -44,3 +45,4 @@ generate(balls,size)
 print(balls)
 result = puzzle(balls)
 print(result)
+balls = []

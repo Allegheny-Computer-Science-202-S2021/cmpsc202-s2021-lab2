@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Arrays;
 public class TSA {
-    public static int[] prepareData(int[] prices){
+    public static int[] generate(int[] prices){
         /*
         Data is prepared by inserting random values 
         up to 100. Data items may be repeated. 
@@ -30,7 +30,7 @@ public class TSA {
         Scanner scan = new Scanner(System.in);
         int days = scan.nextInt();
         int[] prices_initialized = new int[days]; 
-        int[] prices_populated = prepareData(prices_initialized);
+        int[] prices_populated = generate(prices_initialized);
 
         // a set of days and their respective prices. 
         /* does a random distribution of prices.
