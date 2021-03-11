@@ -36,7 +36,7 @@ public class TSA {
         /* does a random distribution of prices.
         */
         
-        /* Implement the computeSoan method, so as to 
+        /* Implement the computeSpan method, so as to 
         get the correct results.*/
         int[] span = computeSpan(prices_populated);
         

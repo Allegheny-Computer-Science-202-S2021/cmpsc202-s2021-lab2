@@ -3,7 +3,7 @@ import random
 limit,calls = 2,0
 # This method is used to generate a list with random values.
 def generate(balls,size):
-    maximum = 25; # maximum ball weight 25 oz, assuming weight distributed between 19 and 25
+    maximum = 25; # maximum ball weight 25 oz for similar balls. heavier ball is more than genuine weight.
     genuine_weight = random.randint(20,maximum)
     defective_weight = random.randint(30,genuine_weight+30)
     if (genuine_weight == defective_weight):
@@ -34,15 +34,16 @@ def balance(balls,left,right):
     else:
         return 1
 
-def puzzle(balls):
+def puzzle(balls,size):
     result = 0
-    # add your logic here by removing pass below ...
+    # add your logic here below ...
+    
     return result
 
 balls = []
 size = 9
 generate(balls,size)
 print(balls)
-result = puzzle(balls)
+result = puzzle(balls,size)
 print(result)
 balls = []

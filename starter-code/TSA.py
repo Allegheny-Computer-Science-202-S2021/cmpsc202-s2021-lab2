@@ -1,6 +1,6 @@
 import random
 def generate(prices,size):
-	maximum = 100; # maximum coin weight 100 grams
+	maximum = 100; # maximum price of 100
 	for i in range(0,size):
 		prices.insert(i,random.randint(1,maximum))
 	
